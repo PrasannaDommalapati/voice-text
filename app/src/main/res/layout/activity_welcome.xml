@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mini.bhanu.com.voicetext.WelcomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="welcome"
+            android:textAllCaps="true"
+            android:textColor="#EFBA8C"
+            android:textSize="32dp"
+            android:textStyle="bold|italic" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:id="@+id/goToLogin"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="-15dp"
+            android:drawableStart="@drawable/user"
+            android:text="Login to Send Mail"
+            android:layout_width="match_parent" />
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
