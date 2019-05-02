@@ -215,6 +215,11 @@ public class SendMailSSL {
         emailText = emailText.replaceAll(" ","");
         emailText = emailText.replaceAll("at","@");
         emailText = emailText.replaceAll("At","@");
+        emailText = emailText.replaceAll("Dot", ".");
+        emailText = emailText.replaceAll("hyphen", "-");
+        emailText = emailText.replaceAll("dash", "-");
+        emailText = emailText.replaceAll("Dash", "-");
+        emailText = emailText.replaceAll("underscore", "_");
         emailText = emailText.replaceAll("At the rate","@");
         emailText = emailText.replaceAll("at the rate","@");
         emailText = formatBodyText(emailText);
